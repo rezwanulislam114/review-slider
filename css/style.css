@@ -54,6 +54,19 @@ body {
 .card {
     padding: 15px;
     height: 300px;
+    position: relative;
+    z-index: 1;
+}
+.card::after {
+    content: '';
+    position: absolute;
+    width:90px;
+    height:90px;
+    border-radius: 0 0 100% 0;
+    background: #4072df;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .profile {
     display: flex;
